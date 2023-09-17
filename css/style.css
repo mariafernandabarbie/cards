@@ -10,7 +10,7 @@ img {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,11 +20,11 @@ main {
 
 .card {
   background-color: hsl(324, 83%, 2%);
-  padding: 25px;
-  max-width: 340px;
+  padding: 2rem;
+  max-width: 50%;
   display: flex;
   flex-flow: column;
-  gap: 20px;
+  gap: 1rem;
   border-radius: 20px;
 }
 
@@ -41,7 +41,7 @@ main {
 }
 
 .card picture:hover .img-principal {
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .card picture .img-principal {
@@ -77,19 +77,16 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card-price .flex-row {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
   flex-flow: row nowrap;
 }
 
-.card-price .price p {
-  font-size: 0.9rem;
-  color: hsl(323, 97%, 48%);
-}
-
+.card-price .price p,
 .card-price .time p {
   font-size: 0.9rem;
   color: hsl(323, 97%, 48%);
@@ -97,11 +94,11 @@ main {
 
 .card-author {
   border-top: 1px solid hsl(215, 32%, 27%);
-  height: 60px;
-  padding-top: 20px;
+  padding-top: 1rem;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+  gap: 1rem;
 }
 
 .card-author img {
@@ -124,4 +121,18 @@ main {
 
 .card-author p span:hover {
   color: hsl(323, 97%, 48%);
+}
+
+@media (max-width: 1024px) {
+  main {
+    padding: 2rem;
+  }
+  
+  .card {
+    max-width: 100%;
+  }
+  
+  .card-price {
+    flex-direction: column;
+  }
 }
