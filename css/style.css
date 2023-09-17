@@ -105,11 +105,15 @@ main {
   border: 2px solid hsl(0, 0%, 100%);
   border-radius: 100%;
 }
+header{
+  border: 2px solid hsl(323, 79%, 65%);
+
+}
 
 .logo img {
   width: 150px;
   height: 150px;
-  border: 2px solid hsl(0, 0%, 100%);
+  border: 2px solid hsl(323, 97%, 48%);
   border-radius: 100%;
 }
 
