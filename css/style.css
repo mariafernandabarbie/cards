@@ -11,12 +11,14 @@ img {
 }
 
 main {
-  max-height: 200vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   background-color: hsl(323, 97%, 48%);
   font-family: "Outfit", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espaçamento entre os cards */
+  justify-content: center; /* Centralizar os cards horizontalmente */
 }
 
 .card {
@@ -24,7 +26,7 @@ main {
   padding: 25px;
   max-width: 340px;
   display: flex;
-  flex-flow: column;
+  flex-grow: column;
   gap: 20px;
   border-radius: 20px;
 }
