@@ -120,3 +120,23 @@ main {
   color: hsl(323, 97%, 48%);
 }
 
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: repeat(1, 1fr); 
+    padding: 20px;
+  }
+
+  .card {
+    max-width: 100%; 
+  }
+
+  .card-author img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .card-price .price p,
+  .card-price .time p {
+    font-size: 0.9rem; 
+  }
+}
